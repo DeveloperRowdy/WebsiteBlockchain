@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="nl">
+	<head>
+		<title>Economisch Voorbeeld</title>
+		<link rel="stylesheet" href="styles.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+		<link rel="shortcut icon" href="https://cdn3.iconfinder.com/data/icons/business-affairs-vol-2/128/bitcoin-blockchain-512.png">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		<style>
+			#navbar {
+			overflow: hidden;
+			background-color: #333;
+			}
+
+			#navbar a {
+			float: left;
+			display: block;
+			color: #f2f2f2;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+			font-size: 17px;
+			}
+
+			#navbar a:hover {
+			background-color: #ddd;
+			color: black;
+			}
+
+			#navbar a.active {
+			background-color: #fb6e0e;
+			color: white;
+			}
+
+			.content {
+			padding: 16px;
+			}
+
+			.dropdown {
+			float: left;
+			overflow: hidden;
+			}
+
+			.dropdown .dropbtn {
+			font-size: 16px;  
+			border: none;
+			outline: none;
+			color: white;
+			padding: 14px 16px;
+			background-color: inherit;
+			font-family: inherit;
+			margin: 0;
+			}
+
+			.navbar a:hover, .dropdown:hover .dropbtn {
+			background-color: red;
+			}
+
+			.dropdown-content {
+			display: none;
+			position: absolute;
+			background-color: #333;
+			min-width: 160px;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			z-index: 1;
+			}
+
+			.dropdown-content a {
+			float: none;
+			color: black;
+			padding: 12px 16px;
+			text-decoration: none;
+			display: block;
+			text-align: center;
+			}
+
+			.dropdown-content a:hover {
+			background-color: #ddd;
+			}
+			
+
+			.dropdown:hover .dropdown-content {
+			display: block;
+			}
+			
+			#titlerelease {
+				text-align: center;
+				animation: fadein 4s;
+				-moz-animation: fadein 4s; /* Firefox */
+				-webkit-animation: fadein 4s; /* Safari and Chrome */
+				-o-animation: fadein 4s; /* Opera */
+			}
+			@keyframes fadein {
+				from {
+					opacity:0;
+				}
+				to {
+					opacity:1;
+				}
+			}
+			@-moz-keyframes fadein { /* Firefox */
+				from {
+					opacity:0;
+				}
+				to {
+					opacity:1;
+				}
+			}
+			@-webkit-keyframes fadein { /* Safari and Chrome */
+				from {
+					opacity:0;
+				}
+				to {
+					opacity:1;
+				}
+			}
+			@-o-keyframes fadein { /* Opera */
+				from {
+					opacity:0;
+				}
+				to {
+					opacity: 1;
+				}
+			}
+			.clock {
+				color: #17D4FE;
+				font-family: Orbitron;
+				padding-top: 0px;
+				padding-right: 0px;
+				padding-bottom: 0px;
+				padding-left: 0px;
+				font-size: 15px;
+			}
+			.sticky {
+			  position: fixed;
+			  top: 0;
+			  width: 100%;
+			}
+		</style>	
+	</head>
+	<body style="background-image: url(Economisch.jpg);" class="bodyvoorbeeldeco" id="titlerelease">
+		<div id="navbar">
+			<a href="homepage.html" href="javascript:void(0)">Home</a>
+			<a href="samenvatting.html" href="javascript:void(0)" >Inleiding</a>
+			<!break>		  
+				<div class="dropdown">
+					<button class="dropbtn">Economisch
+						<i class="fa fa-caret-down"></i>
+					</button>
+					<div class="dropdown-content">
+						<a href="watisheteconomisch.html">Wat is het economisch?</a><br>
+						<a class="active" href="voorbeeldeco.html">Economische voorbeelden</a><br>
+					</div>
+				</div>
+			<!break>
+				<div class="dropdown">
+					<button class="dropbtn">Technisch
+						<i class="fa fa-caret-down"></i>
+					</button>
+					<div class="dropdown-content">
+						<a href="watishettech.html">Wat is het technisch?</a><br>
+						<a href="voordelentech.html">Technische voordelen</a><br>
+						<a href="nadelentecht.html">Technische nadelen</a><br>
+					</div>
+				</div>
+			<!break>		 
+				<div class="dropdown">
+					<button class="dropbtn">Maatschappelijk
+						<i class="fa fa-caret-down"></i>
+					</button>
+					<div class="dropdown-content">
+						<a href="watishetm.html">Wat is het maatschappelijk?</a><br>
+						<a href="voordelenmaat.html">Maatschappelijke voordelen</a><br>
+						<a href="nadelenmaat.html">Maatschappelijke nadelen</a><br>
+					</div>
+				</div>
+			<!break>			
+			<a href="Discussie.html" href="javascript:void(0)">Conclussie</a>
+			<a href="bronnen.html" href="javascript:void(0)">Bronnen</a>
+			<p id="MyClockDisplay" class="clock" onload="showTime()"></p>	
+		</div>
+		<section>	
+			<div >
+				<h1 class="inhoud_proef">Economisch voorbeeld</h1>
+				<img src="Wissel.jpg" alt="Wissel" class= "waterpest" style="width:auto; max-width: 300px; padding-bottom: 15px; padding-left: 15px; float:right; clear:both;">
+				<img src="Wissel1.jpg" alt="Wissel1" class= "waterpest" style="width:auto; max-width: 300px; padding-bottom: 15px; padding-left: 15px; float:right; clear:both;">
+				<img src="Wissel2.jpg" alt="Wissel2" class= "waterpest" style="width:auto; max-width: 300px; padding-bottom: 15px; padding-left: 15px; float:right; clear:both;">
+				<img src="Wissel3.jpg" alt="Wissel3" class= "waterpest" style="width:auto; max-width: 300px; padding-bottom: 15px; padding-left: 15px; float:right; clear:both;">
+				<p class="textinleiding">
+					Stel je het volgende voor: 
+					<br>
+					Henk stuurt geld naar Anne.
+					<br>
+					Anne koopt op haar beurt een brood bij bakker Jan en stuurt het geld naar Jan om hem te betalen.
+					<br>
+					Om een stabiel geldsysteem te hebben, moet er worden bijgehouden waar het geld naartoe is gegaan en wie het geld nu heeft. 
+					<br>
+					Binnen het conventionele geldsysteem gaat een transactie van punt A naar punt B met tussenkomst van een bank. 
+					<br>
+					De bank overziet en beheert alle transacties, en houdt daarnaast alle balansen bij.
+					<br>
+					Wat Satoshi Nakamoto (de oprichter van Bitcoin) heeft gedaan, om de noodzaak van een centraal punt te kunnen omzeilen,
+					<br>
+					is de data organiseren op een blockchain die decentraal bijhoudt waar welk bedrag naar toe gaat en wie het nu bezit.
+					<br>
+					Een blockchain werkt door middel van het verzamelen van transacties. 
+					<br>
+					Deze verzamelde transacties worden vervolgens in een block verwerkt met extra informatie (een zogeheten ‘hash’ van zowel dit block als de hash van het vorige block, hierover later meer).
+					<br>
+					Daarna wordt er gezorgd dat het nieuwe block naar het vorige block verwijst, welke weer transacties bevat die dus vlak daarvoor in de tijd hebben plaatsgevonden.
+					 <br>
+					Wanneer het nieuwe block naar het vorige block verwijst, en dit bij elk opvolgende block wordt herhaald krijg je dus een ketting van blocks, oftewel een blockchain. 
+					<br>
+					Op deze manier wordt er voor gezorgd dat je praktisch elke transactie uit het verleden kunt terug zien in eerdere blocks. 
+					<br>
+					Ja, zelfs de allereerste transactie die ooit plaats heeft gevonden.
+				</p>
+			<h2 class="inhoud_proef">Waarom?</h2>
+				<p class="textinleiding">
+					Om even terug te grijpen op de voorbeeld transactie van Anne aan Jan:
+					<br>
+					In het nieuwe block staat de betaling voor het brood van Anne aan Jan.
+					<br>
+					In het vorige block staat datzelfde geld geregistreerd als een transactie van Henk aan Anne.
+					<br>
+					In essentie is een blockchain een unieke manier om data te organiseren, 
+					<br>
+					die ons vertelt wie waar geld naartoe heeft verzonden en wie het geld nu heeft zonder tussenkomst van een centrale autoriteit zoals een bank of andere instantie.
+				</p>
+			</div>
+		</section>
+		<section>
+			<script>
+				window.onscroll = function() {myFunction()};
+
+				var navbar = document.getElementById("navbar");
+				var sticky = navbar.offsetTop;
+
+				function myFunction() {
+				  if (window.pageYOffset >= sticky) {
+					navbar.classList.add("sticky")
+				  } else {
+					navbar.classList.remove("sticky");
+				  }
+				}
+			</script>
+			<script>
+				function showTime(){
+				var date = new Date();
+				var h = date.getHours(); // 0 - 23
+				var m = date.getMinutes(); // 0 - 59
+				var s = date.getSeconds(); // 0 - 59
+				var t = "Het is nu";
+				
+				if(h == 0){
+					h = 24;
+				}
+				
+				h = (h < 10) ? "0" + h : h;
+				m = (m < 10) ? "0" + m : m;
+				s = (s < 10) ? "0" + s : s;
+				
+				var time = t + ":" + "      " + h + ":" + m + ":" + s;
+				document.getElementById("MyClockDisplay").innerText = time;
+				document.getElementById("MyClockDisplay").textContent = time;
+				
+				setTimeout(showTime, 1000);
+				
+				}
+
+				showTime();
+			</script>
+		</section>
+	</body>
+</html>

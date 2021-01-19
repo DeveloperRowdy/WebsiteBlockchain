@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="nl">
+	<head>
+		<title>Samenvatting</title>
+		<link rel="stylesheet" href="styles.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		<style>
+			#navbar {
+			overflow: hidden;
+			background-color: #333;
+			}
+
+			#navbar a {
+			float: left;
+			display: block;
+			color: #f2f2f2;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+			font-size: 17px;
+			}
+
+			#navbar a:hover {
+			background-color: #ddd;
+			color: black;
+			}
+
+			#navbar a.active {
+			background-color: #fb6e0e;
+			color: white;
+			}
+
+			.content {
+			padding: 16px;
+			}
+
+			.dropdown {
+			float: left;
+			overflow: hidden;
+			}
+
+			.dropdown .dropbtn {
+			font-size: 16px;  
+			border: none;
+			outline: none;
+			color: white;
+			padding: 14px 16px;
+			background-color: inherit;
+			font-family: inherit;
+			margin: 0;
+			}
+
+			.navbar a:hover, .dropdown:hover .dropbtn {
+			background-color: red;
+			}
+
+			.dropdown-content {
+			display: none;
+			position: absolute;
+			background-color: #333;
+			min-width: 160px;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			z-index: 1;
+			}
+
+			.dropdown-content a {
+			float: none;
+			color: black;
+			padding: 12px 16px;
+			text-decoration: none;
+			display: block;
+			text-align: center;
+			}
+
+			.dropdown-content a:hover {
+			background-color: #ddd;
+			}
+
+			.dropdown:hover .dropdown-content {
+			display: block;
+			}
+		</style>	
+	</head>
+	<body class="bodyinleiding" id="titlerelease">
+		<div id="navbar">
+			<a href="index.html" href="javascript:void(0)">Home</a>
+			<a class="active" href="samenvatting.html" href="javascript:void(0)" >Inleiding</a>
+			<a href="inleiding.html" href="javascript:void(0)">Wat is blockchain?</a>
+			<!break>		  
+				<div class="dropdown">
+					<button class="dropbtn">Economisch
+						<i class="fa fa-caret-down"></i>
+					</button>
+					<div class="dropdown-content">
+						<a href="#">Wat is het economisch?</a><br>
+						<a href="#">Economische voordelen</a><br>
+						<a href="#">Economische nadelen</a><br>
+					</div>
+				</div>
+			<!break>
+				<div class="dropdown">
+					<button class="dropbtn">Technisch
+						<i class="fa fa-caret-down"></i>
+					</button>
+					<div class="dropdown-content">
+						<a href="#">Wat is het technisch?</a><br>
+						<a href="#">Technische voordelen</a><br>
+						<a href="#">Technische nadelen</a><br>
+					</div>
+				</div>
+			<!break>		 
+				<div class="dropdown">
+					<button class="dropbtn">Maatschappelijk
+						<i class="fa fa-caret-down"></i>
+					</button>
+					<div class="dropdown-content">
+						<a href="#">Wat is het maatschappelijk?</a><br>
+						<a href="#">Maatschappelijke voordelen</a><br>
+						<a href="#">Maatschappelijke nadelen</a><br>
+					</div>
+				</div>
+			<!break>			
+			<a href="discussie.html" href="javascript:void(0)">Conclussie</a>
+			<a href="bronnen.html" href="javascript:void(0)">Bronnen</a>
+		</div>
+		<section>	
+			<div >
+				<h1 class="inhoud_proef">Wat is een blockchain?</h1>
+				<img src="Waterpest.jpg" alt="Waterpest" class= "waterpest" style="width:auto; max-width: 300px">
+				<p class="textinleiding">
+				Kort gezegd is een blockchain een blokkenketting die informatie bevat. 
+				<br>
+				In deze blokken kunnen bijvoorbeeld transacties worden opgeslagen. 
+				<br>
+				In het ene geval gaat dit om betalingen met een digitale munt, in andere gevallen gaat het om belangrijke gegevens die uitgewisseld kunnen worden tussen twee partijen, 
+				<br>
+				als contracten, diploma’s en eigendomsbewijzen, zonder tussenkomst van een derde partij. De gegevens worden direct opgeslagen in de database.
+				<br>
+				De blockchain staat vooral bekend vanwege de privacy mogelijkheden. 
+				<br>
+				Het is namelijk niet mogelijk om informatie/gegevens te verwijderen, te vervangen of aan te passen zodra deze op een blockchain vastgelegd zijn. 
+				<br>
+				De gegevens in de blockchain staan opgeslagen op servers van 1 bedrijf met 1 eigenaar. 
+				<br>
+				Het is van belang dat iedereen de eigenaar van het bedrijf vertrouwt, want de eigenaar van de opgeslagen gegevens in de blockchain heeft een absolute macht.
+				<br>
+				Hij kan met die bepalen om alle informatie te wijzigen of te verwijderen, zonder dat iemand anders daarvan weet.
+				<br>
+				Om blockchain volledig te gebruiken, heb je te maken met verschillende stappen die hieronder uitgebreid uitgelegd worden:
+				<br>
+				Een user wilt een nieuwe transactie, betaling of gegevens opslaan via blockchain. De user vraagt een “request” aan bij de servers van de instantie, waar hij dit wilt doen.
+				<br>
+				De user betaald of slaat bepaalde gegevens op in de blockchain. Hij krijgt daarmee een block in de ketting van de blockchain toegewezen. 
+				<br>
+				Het block van de user wordt getransporteerd over een netwerk, wat ook wel het P2P-netwerk (meer hierover bij technische aspecten)** genoemd wordt. 
+				<br>
+				Het voordeel van zo’n p2p-netwerk is, dat het netwerk van de blockchain nog zal werken, wanneer één of meerdere cloud servers uitvallen/uitgevallen zijn. 
+				</p>
+			</div>
+		</section>
+		<script>
+		window.onscroll = function() {myFunction()};
+
+		var navbar = document.getElementById("navbar");
+		var sticky = navbar.offsetTop;
+
+		function myFunction() {
+		  if (window.pageYOffset >= sticky) {
+			navbar.classList.add("sticky")
+		  } else {
+			navbar.classList.remove("sticky");
+		  }
+		}
+		</script>
+	</body>
+</html>

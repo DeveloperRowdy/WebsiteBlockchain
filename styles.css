@@ -1,0 +1,150 @@
+.bodyindex {
+	background-image: url("https://media.giphy.com/media/QUXK4fFx8kYci4mcar/source.gif");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+.bodyinleiding {
+	background-image: url("black.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+.bodywatisheteconomisch{
+	background-image: url("bitcoin.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+.bodyvoorbeeldeco{
+	background-color: url("Economisch.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+.bodywatishettechnisch{
+	background-color: url("Technical.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+.bodyvoordelentech{
+	background-color: black;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+.bodynadelentech{
+	background-color: black;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+.bodywatishetmaatschappelijk1{
+	background-image: black;
+	background-attachment: fixed;
+	  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.bodyvoordelenmaat{
+	background-color: black;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+.bodynadelenmaat{
+	background-color: black;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+.bodyconclusie{
+	background-color: black;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+.title{
+  color: #fb6e0e;
+  text-align: center;
+  font-size: 40px;
+  font-family: Courgette;
+  text-shadow: 5px 5px 30px #ab5407;
+}
+.foto_home_blockchain {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width:auto; 
+  max-width: 500px; 
+}
+.waterpest{
+  display: block;
+  border-radius: 3%;
+  color: white;
+  box-shadow: 2px 2px 50px #000000;
+  float:right;
+  margin-left:50px;
+  margin-right:50px;
+  margin-bottom:10px;
+  margin-top:10px;
+}
+.Namen{
+  color: #ffffff;
+  font-family: Courgette;
+  font-size:23px;
+  text-shadow: 5px 5px 30px #ab5407;
+  float:left;
+}
+.leerjaarplaats{
+  color: #ffffff;
+  font-family: Courgette;
+  font-size:23px;
+  text-shadow: 5px 5px 30px #ab5407;
+  float:right;
+}
+.footerindex{
+	bottom: 10px;
+	position:fixed;
+	width:99%;
+}
+.Inleiding{   
+  font-family: Courgette;
+   color: #fb6e0e;
+text-shadow: 5px 5px 30px #ab5407;
+font-size: 25px;	
+}
+.inhoud_proef{
+	  font-family: Courgette;
+	  text-align: left;
+	  color: white;  
+}
+.textinleiding{
+	  font-family: Courgette;
+	  text-align: left;
+	  color: #ffa500;
+}	
+.textinleiding1{
+	  font-family: Courgette;
+	  text-align: left;
+	  color: white;
+}	
+.conclusie{
+  font-family: Courgette;
+   color: #fb6e0e;
+text-shadow: 5px 5px 30px #ab5407;
+font-size: 25px;
+}
+.discussie{
+  font-family: Courgette;
+   color: #fb6e0e;
+text-shadow: 5px 5px 30px #ab5407;
+font-size: 25px;
+}
+.bronnen{
+  font-family: Courgette;
+   color: #fb6e0e;
+text-shadow: 5px 5px 30px #ab5407;	
+font-size: 25px;
+}
+
