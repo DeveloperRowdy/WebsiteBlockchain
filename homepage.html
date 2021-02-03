@@ -220,14 +220,15 @@
 			<!break>			
 			<a href="Discussie.html" href="javascript:void(0)">Conclussie</a>
 			<a href="bronnen.html" href="javascript:void(0)">Bronnen</a>
+			<!break>
 			<div class="informatie">
-			<a style= "display: inline-block; float:right;">
-			<b><div id="wrapper" style= "display: inline-block;">Het is nu:</div>
-			<b><div id="MyClockDisplay" class="clock" onload="showTime()" style= "display: inline-block;"></div>
-			&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
-			<b><div id="wrapper" style= "display: inline-block;">De waarde van de bitcoin is:</div>
-			<b><b><div id="btc" style= "display: inline-block;"></div>
-			</a>
+				<a style= "float:right;">
+					<b><div id="wrapper" style= "display: inline-block;">Het is nu:</div>
+					<b><div id="MyClockDisplay" class="clock" onload="showTime()" style= "display: inline-block;"></div>
+					&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+					<b><div id="wrapper" style= "display: inline-block;">De waarde van de bitcoin is:</div>
+					<b><b><div id="btc" style= "display: inline-block;"></div>
+				</a>
 			</div>
 		</div>
 		<div>
@@ -243,6 +244,19 @@
 		</div>
 		<section>
 			<script>
+				//Zet de navbar als sticky, zodat deze aan de bovenkant van het scherm blijft als er gescrolld wordt.
+				//De window.onscroll functie geeft de functie van het windows scroll systeem aan. Door dit systeem kan er op de website gescrolld worden
+				//Bij document.getElementById("navbar"); haalt de variable het volgende id op: navbar (zie regel 185). In de script gebruiken we dit id als variable navbar
+				//De variable sticky geeft aan dat de navbar aan de bovenkant van de pagina moet blijven staan. Dit staat als navbar.offsetTop;
+				//Vervolgens verklaren wij de window.onscroll functie en geven deze een functie
+				//Als er op de pagina naar beneden wordt gescrolld (vertical, dus wiskundige y-as) zal deze groter of gelijk aan sticky zijn.
+				//ALs deze kleiner zal zijn zal de functie sticky niet werken en blijft de navbar dus op de bovenkant van de pagina, waar deze altijd staat
+				//De functie is op dat moment dus onnodig
+				//navbar.classList.add("sticky") geeft aan dat het scrollen op de website de variable sticky geintroduceerd moet worden, zodat de navbar ook aan de bovenkant
+				//van de pagina blijft
+				//Als de pagina weer helemaal naar boven is gescrolld, zal het script de variable sticky weer verwijderen. De navbar blijft dan weer bovenaan de pagina,zoals normaal. Het script wordt onnodig
+
+				// Dit script is noodzakelijk om op kleine devices de navbar altijd op het scherm te hebben, zodat er makkelijk genavigeerd kan worden naar andere pagina's
 				window.onscroll = function() {myFunction()};
 
 				var navbar = document.getElementById("navbar");
@@ -257,6 +271,16 @@
 				}
 			</script>
 			<script>
+				//Code voor het tonen van de klok
+				//De var h,m,s houden de uren, minuten en seconden in. De script moet deze ophalen van de windows NTP server (clock server)
+				//Zoals de date is een nieuwe variable, dus deze moet geintroduceerd worden als new date()
+				//De klok moet weer gereset worden als deze 24 uur bereikt heeft. De notatie gaat dan van 24:00 naar 00:00, zoals wij de digitale klok lezen
+				//De h,m en s moeten kleiner zijn dan 10 om twee cijfers te tonen, Als deze 10 er niet had gestaan, had er bijvoorbeeld 8:00 gestaan
+				//Door deze 10 heeft de klok altijd twee cijfers, ook wel het hh:mm:ss systeem genoemd, daarom staat de "0" ook genoteerd.
+				//Var time geeft de variable van de tijd weer op de website. Deze wordt als volgt getoond: spatie uur:minuten:seconden
+				//document.getelementbyid koppeld het id bij de dropdownmenu/navbar aan de script. 
+				//TextContent gets the content of all elements, including <script> and <style> elements. 
+				//In contrast, innerText only shows “human-readable” elements.
 				function showTime(){
 				var date = new Date();
 				var h = date.getHours(); // 0 - 23
@@ -282,6 +306,12 @@
 				showTime();
 			</script>
 			<script id= "bitcoin">
+				//Tonen van de laatst genoemde bitcoin koers. Wanneer de pagina volledig is geladen, dan zal het volgende script het overnemen
+				//Op naast readystate staat het getal 4. De definitie van dit getal staat op deze website uitgelegd. Kortom het houdt in dat de verversing van de koers pas mag veranderen als de pagina geladen is
+				//https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/readyState
+				//De ticker.bids geeft aan het ophalen van de koers weer. Dit zie je ook bij var ticker. Hier staat kort dat de currentprice (huidige prijs) een respons is van de opgehaalde prijs/koers.
+				//Als laatst geeft het document.getelementbyid aan dat de btc koers getoond mag worden op de website met behulp van een object.
+				//De currentprice.send geeft de verzending naar de website van blockchain weer.
 				var currentPrice = new XMLHttpRequest();
 				currentPrice.open('GET', 'https://api.gdax.com/products/BTC-USD/book', true);
 				currentPrice.onreadystatechange = function(){
@@ -294,10 +324,11 @@
 				currentPrice.send();
 			</script>
 			<script> 
+			//Tonen van huidige bitcoin koers, Verversingssnelheid van 1 seconden (Kan niet korter, omdat de webpagina traag kan laden op minder sterke devices)
 				window.onload = startInterval;
 				function startInterval()
 				{
-					setInterval("startTime();",2000);
+					setInterval("startTime();",1000);
 				}
 				
 				function startTime()
@@ -325,6 +356,5 @@
 				<b>Leerjaar 2020-2021 op het Fioretti College te Lisse</b>
 			</p>
 		</div>
-		<p>Dit is een preview; versie 0.8</p>
 	</footer>
 </html>
